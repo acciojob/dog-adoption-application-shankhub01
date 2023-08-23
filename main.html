@@ -8,30 +8,28 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form> 
-		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="Name">
-		<br>
-		<label for="phone">Phone Number</label>
-		<input type="text" id="phone" placeholder="Phone Number">
-		<br>
-		<label for="adress">Address</label>
-		<input type="text" id="adress" placeholder="Address">
-		<br>
-		<label for="checkbox">Have you ever lived with a Dog before?</label>
-		<input type="checkbox" id="checkbox" >
-		<br>
-		<label for="multiSelect">Please select your preferred breeds</label>
-		<select for="multiSelect"> 
-			 <option value="" disabled selected>--Please choose an option--</option>
-			<option value="French Bulldog">French Bulldog</option>
-			<option value="Labrador Retriever">Labrador Retriever</option>
-			<option value="beagle">beagle</option>
-		</select>
-		<br>
-		   <input type="submit" value="Submit">
-	
+	<form>
 		
+		<label for="name">Name</label>
+		<input type="text" placeholder="Name" id="name" name="name">
+	
+		<label for="phone">Phone Number</label>
+		<input type="text" placeholder="Phone Number" id="phone" name="phone">
+	
+		<label for="address">Address</label>
+		<input type="text" placeholder="Address" id="address" name="address">
+		<label for="checkbox">Have you ever lived with a Dog before?</label>
+		<input type="checkbox" value="Have you ever lived with a Dog before?" id="checkbox">
+	<select id="multiSelect" multiple>
+  <option value="goldenRetriever">Golden Retriever</option>
+  <option value="poodle">Poodle</option>
+  <option value="germanShepherd">German Shepherd</option>
+  <option value="labradorRetriever">Labrador Retriever</option>
+  <option value="bulldog">Bulldog</option>
+</select>
+			
+			
+		<button value="Submit" id="submit">Submit</button>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
